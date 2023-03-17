@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ShortUrlRepository extends CrudRepository<ShortUrl, Long> {
+public interface ShortifyRepository extends CrudRepository<ShortUrl, Long> {
      Optional<ShortUrl> findByShortKey(String shortKey);
 }
 
