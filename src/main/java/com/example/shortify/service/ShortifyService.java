@@ -11,7 +11,7 @@ import com.example.shortify.dto.ShortUrlDto;
 import com.example.shortify.entity.ShortUrl;
 import com.example.shortify.exception.UrlInvalidException;
 import com.example.shortify.exception.UrlNotFoundException;
-import com.example.shortify.mapper.DtoToEntityMapper;
+import com.example.shortify.mapper.EntityToDTOMapper;
 import com.example.shortify.repository.ShortifyRepository;
 import com.google.common.hash.Hashing;
 import org.springframework.beans.factory.annotation.Value;
@@ -51,7 +51,7 @@ public class ShortifyService {
                     .build();
              shortUrl = shortifyRepository.save(shortUrl);
         }
-        return DtoToEntityMapper.convertToShortUrlDto(shortUrl);
+        return EntityToDTOMapper.convertToShortUrlDto(shortUrl);
     }
 
     public String getUrlByKey(String key) throws UrlNotFoundException {
