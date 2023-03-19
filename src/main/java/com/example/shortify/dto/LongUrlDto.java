@@ -11,6 +11,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class LongUrl implements Serializable {
+public class LongUrlDto implements Serializable {
     private String longUrl;
 }
