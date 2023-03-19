@@ -6,3 +6,7 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
   jpa:
     spring.jpa.database-platform:
+validity:
+  in-days: 28
+
+
