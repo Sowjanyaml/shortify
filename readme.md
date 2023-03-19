@@ -12,13 +12,15 @@ Open [swagger](http://localhost:8080/swagger-ui/index.html) to see endpoints.
 + With Docker
 
 ```sh
-$ git clone 
+$ git clone https://github.com/Sowjanyaml/shortify.git
+
 $ docker build --tag=shortify:latest . 
 $ docker run -e "SPRING_PROFILES_ACTIVE=dev" -p8080:8080 shortify:latest
 ```
 + Without Docker:
 ```sh
-$ git clone 
+$ git clone https://github.com/Sowjanyaml/shortify.git
+
 ```
 * Open project with your favorite editor.
 * Build and run Spring boot project
